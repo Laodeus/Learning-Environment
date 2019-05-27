@@ -1,5 +1,5 @@
 body{
-
+    background-color: #e3e8ea;
     
 } 
 
@@ -9,13 +9,18 @@ h1{
 
 }
 
+h2, h3, h4, h4, h5, h6{
+    text-decoration-line: underline overline;
+}
+
 code, code ul, code ol, code input{ 
     display: inline-block;
 
     margin-left: 5%;
     margin-right: 5%;
-    background-color: grey;
-    border-style: solid;
+    background-color: #cce8b4;
+
+    color: #04021e;
 }
 
 
