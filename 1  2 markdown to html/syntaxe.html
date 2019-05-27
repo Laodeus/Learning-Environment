@@ -1,0 +1,154 @@
+<html>
+
+<head>
+    <title>
+        Conversion markdown precedent en html
+    </title>
+    <link href="css.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Syntaxe markdown</h1>
+    <section>
+        <h2>Les listes</h2>
+        <h3>Non ordonnées</h3>
+
+        On précède chaque items par une astérisque "*".<br />
+        <code>
+            <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <ul>
+                <li>Item 2a</li>
+                <li>Item 2b</li>
+            </ul>
+            <li>Item 3</li>
+        </ul>
+    </code>
+
+        <h3>Ordonées</h3>
+
+        Pour imbriquer des listes, on indente la seconde liste dans la première.<br />
+        <code>
+            <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <ol>
+                <li>Item 3a</li>
+                <li>Item 3b</li>
+            </ol>
+        </ol>
+        </code>
+
+        <h3>Les liste de taches.</h3>
+
+        On crée ces listes en les précédant de "-[]" pour des items non cochés
+        et "-[x]" pour des items cochés.<br />
+        <code>
+            <input type="checkbox" checked> <label>@mentions, #refs, links, formatting, and tags supported</label><br />
+            <input type="checkbox" checked> <label>list syntax required (any unordered or ordered list
+            supported)</label><br />
+            <input type="checkbox" checked> <label>this is a complete item</label><br />
+            <input type="checkbox"> <label>this is an incomplete item</label><br />
+        </code>
+        <h3>Imbrication</h3>
+
+        On imbrique des listes en les précédant par une indentation propre à chaque liste.<br>
+        <code>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <ol>
+                        <input type="checkbox" checked> <label>@mentions, #refs, links, formatting, and tags
+                            supported</label><br />
+                        <input type="checkbox" checked> <label>list syntax required (any unordered or ordered list
+                            supported)</label>
+                    </ol>
+                </ol>
+                <li>Item 3</li>
+            </ul>
+        </code>
+    </section>
+    <section>
+        <h3>Images</h3>
+
+        Syntaxe à utiliser afin d'ajouter une image:<br>
+
+        <code>![Alt](url)</code><br>
+        Une autre manière d'ajouter une image est:<br />
+
+        <code>![Alt](/home/user/images/img.png)</code>
+    </section>
+    <section>
+        <h3>Titres :</h3>
+
+        Voici comment créer plusieurs titres :<br />
+
+        Les titres sont créés avec un certain nombre de # avant le titre, <br />
+
+        le Markdown propose 6 niveaux de titres de <br />
+        <code>
+            <h1># => un titre de premier niveau</h1>
+            <h2>## => un titre de premier niveau</h2>
+            <h3>### => un titre de premier niveau</h3>
+            <h4>#### => un titre de premier niveau</h4>
+            <h5>##### => un titre de premier niveau</h5>
+            <h6>###### => un titre de premier niveau</h6>
+    </code>
+    </section>
+    <section>
+        <h3>Mise en forme</h3>
+        <code>
+                    Gras : **texte** <br />
+                    Italique : *texte*<br />
+                    ou _texte_<br />
+                    Gras & italique : ***texte***<br />
+                    Souligné : __texte__<br />
+                    Italique & souligné : __*texte*__<br />
+                    Gras & souligné : __**texte**__<br />
+                    Italique, gras & souligné : __***texte***__<br />
+    </code>
+    </section>
+    <section>
+        <h3>Liens :</h3>
+
+        Il y a 2 façons de faire :<br>
+
+        Soit en écrivant directement le lien en ayant pour nom l'url.<br />
+        <code>http://github.com</code>
+        <<br>
+            Soit en donnant un nom au lien [nom du lien] qui, en cliquant dessus, vous dirigera vers l'url<br />
+            <code>(url);[Github](http://github.com). Ex : Github</code>
+    </section>
+    <section>
+        <h3>Code</h3>
+
+        Pour écrire du code en Markdown avec une coloration syntaxique<br />
+        il faut le code entre avec le nom du langage.<br />
+        <code>
+        ```javascript<br />
+        function fancyAlert(arg) {<br />
+        if(arg) {<br />
+        $.facebox({div:'#foo'})<br />
+        }<br />
+        }<br />
+        ```<br />
+        </code>
+    </section>
+
+    <aside>
+        <ul>
+            <li><a href="syntaxe.html">syntaxe</a></li>
+            <li><a href="index.html">Markdown</a></li>
+            <li><a href="README.md">readme.md</a></li>
+        </ul>
+    </aside>
+
+</body>
+
+</html>

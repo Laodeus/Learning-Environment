@@ -1,0 +1,45 @@
+body{
+    background-color: #e3e8ea;
+    
+} 
+
+h1{
+    text-decoration: underline;
+    text-align: center;
+
+}
+
+h2, h3, h4, h4, h5, h6{
+    text-decoration-line: underline overline;
+}
+
+code, code ul, code ol, code input, code h1, code h2, code h3, code h4, code h4, code h5, code h6{
+    text-decoration-line: underline overline;
+ 
+    display: inline-block;
+    text-decoration: none;
+    text-align: inherit;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #3be035;
+
+    color: #04021e;
+}
+
+section{
+
+    float: right;
+    width: 83%;
+    margin-right: 1%;
+    border-style: ridge;
+
+}
+
+aside{
+    border-style: ridge;
+    width: 13%;
+    margin-left: 1%;
+}
+
+
+
