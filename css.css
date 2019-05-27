@@ -10,8 +10,13 @@ h1{
 }
 
 code, code ul, code ol, code input{ 
+    display: inline-block;
+
     margin-left: 5%;
+    margin-right: 5%;
     background-color: grey;
-    
-} 
+    border-style: solid;
+}
+
+
 

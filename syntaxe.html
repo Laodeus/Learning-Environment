@@ -13,7 +13,7 @@
         <h2>Les listes</h2>
         <h3>Non ordonnées</h3>
 
-        On précède chaque items par une astérisque "*".
+        On précède chaque items par une astérisque "*".<br />
         <code>
             <ul>
             <li>Item 1</li>
@@ -28,7 +28,7 @@
 
         <h3>Ordonées</h3>
 
-        Pour imbriquer des listes, on indente la seconde liste dans la première.
+        Pour imbriquer des listes, on indente la seconde liste dans la première.<br />
         <code>
             <ol>
             <li>Item 1</li>
@@ -73,70 +73,81 @@
                 <li>Item 3</li>
             </ul>
         </code>
+    </section>
+    <section>
         <h3>Images</h3>
 
         Syntaxe à utiliser afin d'ajouter une image:<br>
 
         <code>![Alt](url)</code><br>
-        Une autre manière d'ajouter une image est:
+        Une autre manière d'ajouter une image est:<br />
 
-        ![Alt](/home/user/images/img.png)
-        Titres :
+        <code>![Alt](/home/user/images/img.png)</code>
+    </section>
+    <section>
+        <h3>Titres :</h3>
 
-        Voici comment créer plusieurs titres :
+        Voici comment créer plusieurs titres :<br />
 
-        # Titre: équivaut à <h1> en html
-            ## Titre: équivaut à <h2> en html
-                et ainsi de suite jusqu'à arriver au <h6> : ###### Titre.
-                    Mise en forme :
+        Les titres sont créés avec un certain nombre de # avant le titre, <br />
 
-                    Gras : **texte**
-                    Italique : *texte*
-                    ou _texte_
-                    Gras & italique : ***texte***
-                    Souligné : __texte__
-                    Italique & souligné : __*texte*__
-                    Gras & souligné : __**texte**__
-                    Italique, gras & souligné : __***texte***__
+        le Markdown propose 6 niveaux de titres de <br />
+        <code>
+            <h1># => un titre de premier niveau</h1>
+            <h2>## => un titre de premier niveau</h2>
+            <h3>### => un titre de premier niveau</h3>
+            <h4>#### => un titre de premier niveau</h4>
+            <h5>##### => un titre de premier niveau</h5>
+            <h6>###### => un titre de premier niveau</h6>
+    </code>
+    </section>
+    <section>
+        <h3>Mise en forme</h3>
+        <code>
+                    Gras : **texte** <br />
+                    Italique : *texte*<br />
+                    ou _texte_<br />
+                    Gras & italique : ***texte***<br />
+                    Souligné : __texte__<br />
+                    Italique & souligné : __*texte*__<br />
+                    Gras & souligné : __**texte**__<br />
+                    Italique, gras & souligné : __***texte***__<br />
+    </code>
+    </section>
+    <section>
+        <h3>Liens :</h3>
 
-                    Liens :
+        Il y a 2 façons de faire :<br>
 
-                    Il y a 2 façons de faire :
+        Soit en écrivant directement le lien en ayant pour nom l'url.<br />
+        <code>http://github.com</code>
+        <<br>
+            Soit en donnant un nom au lien [nom du lien] qui, en cliquant dessus, vous dirigera vers l'url<br />
+            <code>(url);[Github](http://github.com). Ex : Github</code>
+    </section>
+    <section>
+        <h3>Code</h3>
 
-                    Soit en écrivant directement le lien en ayant pour nom l'url. Ex : http://github.com
-                    Soit en donnant un nom au lien [nom du lien] qui, en cliquant dessus, vous dirigera vers l'url
-                    (url);[Github](http://github.com). Ex : Github
+        Pour écrire du code en Markdown avec une coloration syntaxique<br />
+        il faut le code entre avec le nom du langage.<br />
+        <code>
+        ```javascript<br />
+        function fancyAlert(arg) {<br />
+        if(arg) {<br />
+        $.facebox({div:'#foo'})<br />
+        }<br />
+        }<br />
+        ```<br />
+        </code>
+    </section>
 
-                    Code
-
-                    Pour écrire du code en Markdown avec une coloration syntaxique il faut le code entre avec le nom du
-                    langage.
-                    Exemple:
-                    Pour faire ce ci:
-
-                    function fancyAlert(arg) {
-                    if(arg) {
-                    $.facebox({div:'#foo'})
-                    }
-                    }
-
-                    Il faut faire cela:
-
-                    ```javascript
-                    function fancyAlert(arg) {
-                    if(arg) {
-                    $.facebox({div:'#foo'})
-                    }
-                    }
-                    ```
-
-                    <section>
-                        <ul>
-                            <li><a href="syntaxe.html">syntaxe</a></li>
-                            <li><a href="index.html">gnegnegne</a></li>
-                            <li><a href="README.md">readme.md</a></li>
-                        </ul>
-                    </section>
+    <section>
+        <ul>
+            <li><a href="syntaxe.html">syntaxe</a></li>
+            <li><a href="index.html">gnegnegne</a></li>
+            <li><a href="README.md">readme.md</a></li>
+        </ul>
+    </section>
 
 </body>
 
