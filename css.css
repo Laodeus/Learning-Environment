@@ -1,5 +1,17 @@
 body{
 
-
     
 } 
+
+h1{
+    text-decoration: underline;
+    text-align: center;
+
+}
+
+code, code ul, code ol, code input{ 
+    margin-left: 5%;
+    background-color: grey;
+    
+} 
+

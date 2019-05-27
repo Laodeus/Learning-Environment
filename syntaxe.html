@@ -1,121 +1,143 @@
- <html>
-    
-    <head>
-        <title>
-            Conversion markdown precedent en html
-        </title>
-        <link href="css.css" />
-    </head>
+<html>
 
-    <body>
-            <h1>Syntaxe markdown</h1> 
-            Les listes
-            Non ordonnées
-            
-            On précède chaque items par une astérisque "*".
-            
-                Item 1
-                Item 2
-                    Item 2a
-                    Item 2b
-                Item 3
-            
-            Ordonées
-            
-            Pour imbriquer des listes, on indente la seconde liste dans la première.
-            
-                Item 1
-                Item 2
-                Item 3
-                    Item 3a
-                    Item 3b
-            
-            Les liste de taches.
-            
-            On crée ces listes en les précédant de "-[]" pour des items non cochés et "-[x]" pour des items cochés.
-            
-                @mentions, #refs, links, formatting, and tags supported
-                list syntax required (any unordered or ordered list supported)
-                this is a complete item
-                this is an incomplete item
-            
-            Imbrication
-            
-            On imbrique des listes en les précédant par une indentation propre à chaque liste.
-            
-                Item 1
-                Item 2
-                    Item 1
-                    Item 2
-                    Item 3
-                    @mentions, #refs, links, formatting, and tags supported
-                    list syntax required (any unordered or ordered list supported)
-                Item 3
-            
-            Images
-            
-            Syntaxe à utiliser afin d'ajouter une image:
-            
-            ![Alt](url)
-            
-            Une autre manière d'ajouter une image est:
-            
-            ![Alt](/home/user/images/img.png)
-            Titres :
-            
-            Voici comment créer plusieurs titres :
-            
-            # Titre: équivaut à <h1> en html
-            ## Titre: équivaut à <h2> en html
-            et ainsi de suite jusqu'à arriver au <h6> : ###### Titre.
-            Mise en forme :
-            
-                Gras : **texte**
-                Italique : *texte*
-                ou _texte_
-                Gras & italique : ***texte***
-                Souligné : __texte__
-                Italique & souligné : __*texte*__
-                Gras & souligné : __**texte**__
-                Italique, gras & souligné : __***texte***__
-            
-            Liens :
-            
-            Il y a 2 façons de faire :
-            
-                Soit en écrivant directement le lien en ayant pour nom l'url. Ex : http://github.com
-                Soit en donnant un nom au lien [nom du lien] qui, en cliquant dessus, vous dirigera vers l'url (url);[Github](http://github.com). Ex : Github
-            
-            Code
-            
-            Pour écrire du code en Markdown avec une coloration syntaxique il faut le code entre avec le nom du langage.
-            Exemple:
-            Pour faire ce ci:
-            
-            function fancyAlert(arg) {
-              if(arg) {
-                $.facebox({div:'#foo'})
-              }
-            }
-            
-            Il faut faire cela:
-            
-            ```javascript
-                function fancyAlert(arg) {
-                    if(arg) {
-                        $.facebox({div:'#foo'})
-                    }
-                }
-            ```
-            
+<head>
+    <title>
+        Conversion markdown precedent en html
+    </title>
+    <link href="css.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Syntaxe markdown</h1>
     <section>
-            <ul>
-                <li><a href="syntaxe.html">syntaxe</a></li>
-                <li><a href="index.html">gnegnegne</a></li>
-                <li><a href="README.md">readme.md</a></li>
-            </ul>
-        </section>
+        <h2>Les listes</h2>
+        <h3>Non ordonnées</h3>
 
-    </body>
+        On précède chaque items par une astérisque "*".
+        <code>
+            <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <ul>
+                <li>Item 2a</li>
+                <li>Item 2b</li>
+            </ul>
+            <li>Item 3</li>
+        </ul>
+    </code>
+
+        <h3>Ordonées</h3>
+
+        Pour imbriquer des listes, on indente la seconde liste dans la première.
+        <code>
+            <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <ol>
+                <li>Item 3a</li>
+                <li>Item 3b</li>
+            </ol>
+        </ol>
+        </code>
+
+        <h3>Les liste de taches.</h3>
+
+        On crée ces listes en les précédant de "-[]" pour des items non cochés
+        et "-[x]" pour des items cochés.<br />
+        <code>
+            <input type="checkbox" checked> <label>@mentions, #refs, links, formatting, and tags supported</label><br />
+            <input type="checkbox" checked> <label>list syntax required (any unordered or ordered list
+            supported)</label><br />
+            <input type="checkbox" checked> <label>this is a complete item</label><br />
+            <input type="checkbox"> <label>this is an incomplete item</label><br />
+        </code>
+        <h3>Imbrication</h3>
+
+        On imbrique des listes en les précédant par une indentation propre à chaque liste.<br>
+        <code>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <ol>
+                        <input type="checkbox" checked> <label>@mentions, #refs, links, formatting, and tags
+                            supported</label><br />
+                        <input type="checkbox" checked> <label>list syntax required (any unordered or ordered list
+                            supported)</label>
+                    </ol>
+                </ol>
+                <li>Item 3</li>
+            </ul>
+        </code>
+        <h3>Images</h3>
+
+        Syntaxe à utiliser afin d'ajouter une image:<br>
+
+        <code>![Alt](url)</code><br>
+        Une autre manière d'ajouter une image est:
+
+        ![Alt](/home/user/images/img.png)
+        Titres :
+
+        Voici comment créer plusieurs titres :
+
+        # Titre: équivaut à <h1> en html
+            ## Titre: équivaut à <h2> en html
+                et ainsi de suite jusqu'à arriver au <h6> : ###### Titre.
+                    Mise en forme :
+
+                    Gras : **texte**
+                    Italique : *texte*
+                    ou _texte_
+                    Gras & italique : ***texte***
+                    Souligné : __texte__
+                    Italique & souligné : __*texte*__
+                    Gras & souligné : __**texte**__
+                    Italique, gras & souligné : __***texte***__
+
+                    Liens :
+
+                    Il y a 2 façons de faire :
+
+                    Soit en écrivant directement le lien en ayant pour nom l'url. Ex : http://github.com
+                    Soit en donnant un nom au lien [nom du lien] qui, en cliquant dessus, vous dirigera vers l'url
+                    (url);[Github](http://github.com). Ex : Github
+
+                    Code
+
+                    Pour écrire du code en Markdown avec une coloration syntaxique il faut le code entre avec le nom du
+                    langage.
+                    Exemple:
+                    Pour faire ce ci:
+
+                    function fancyAlert(arg) {
+                    if(arg) {
+                    $.facebox({div:'#foo'})
+                    }
+                    }
+
+                    Il faut faire cela:
+
+                    ```javascript
+                    function fancyAlert(arg) {
+                    if(arg) {
+                    $.facebox({div:'#foo'})
+                    }
+                    }
+                    ```
+
+                    <section>
+                        <ul>
+                            <li><a href="syntaxe.html">syntaxe</a></li>
+                            <li><a href="index.html">gnegnegne</a></li>
+                            <li><a href="README.md">readme.md</a></li>
+                        </ul>
+                    </section>
+
+</body>
 
 </html>
